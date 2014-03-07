@@ -1,0 +1,33 @@
+#!/usr/bin/make -f
+# -*- mode: makefile; coding: utf-8 -*-
+
+#DEB_MAKE_CHECK_TARGET = test_Rhinohorn
+#build/Rhinohornd::
+#	$(if $(filter nocheck,$(DEB_BUILD_OPTIONS)),,src/test_Rhinohorn)
+
+DEB_INSTALL_EXAMPLES_Rhinohornd += debian/examples/*
+DEB_INSTALL_MANPAGES_Rhinohornd += debian/manpages/*
+
+%:
+	dh --with bash-completion $@
+
+override_dh_auto_build:
+	cd src; $(MAKE) -f makefile.unix Rhinohornd
+	$(MAKE)
+
+override_dh_auto_clean:
+	if [ -f Makefile ]; then $(MAKE) clean; else rm -rf build/; rm -f Rhinohorn-qt; fi
+	cd src; $(MAKE) -f makefile.unix clean
+
+override_dh_auto_configure:
+	qmake Rhinohorn-qt.pro USE_QRCODE=1
+
+override_dh_auto_test:
+	cd src; $(MAKE) -f makefile.unix test_Rhinohorn
+	src/test_Rhinohorn
+
+# Ensure wrapper is set executable
+binary-post-install/Rhinohornd:
+	chmod +x $(cdbs_curdestdir)usr/bin/Rhinohornd
+binary-post-install/Rhinohorn-qt:
+	chmod +x $(cdbs_curdestdir)usr/bin/Rhinohorn-qt

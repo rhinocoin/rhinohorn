@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Rhinohorn
+Comment=Rhinohorn P2P Cryptocurrency
+Exec=/usr/bin/Rhinohorn-qt %u
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/Rhinohorn128.png
+MimeType=x-scheme-handler/bitcoin;
+Categories=Office;
+Name[en_US]=Rhinohorn-qt.desktop

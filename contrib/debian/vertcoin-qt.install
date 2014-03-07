@@ -1,0 +1,6 @@
+Rhinohorn-qt usr/bin
+share/pixmaps/Rhinohorn32.xpm usr/share/pixmaps
+share/pixmaps/Rhinohorn16.xpm usr/share/pixmaps
+share/pixmaps/Rhinohorn128.png usr/share/pixmaps
+debian/Rhinohorn-qt.desktop usr/share/applications
+debian/Rhinohorn-qt.protocol usr/share/kde4/services/

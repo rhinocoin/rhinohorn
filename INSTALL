@@ -1,0 +1,12 @@
+Building Rhinohorn
+
+See doc/readme-qt.rst for instructions on building Rhinohorn-Qt,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of Rhinohorn.
+
+See doc/build-*.txt for instructions on building Rhinohornd,
+the intended-for-services, no-graphical-interface, reference
+implementation of Rhinohorn.
+
+Further build information and documentation is available at
+the official Rhinohorn website, http://www.Rhinohorn.org

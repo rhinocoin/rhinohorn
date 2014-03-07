@@ -1,0 +1,11 @@
+[Protocol]
+exec=Rhinohorn-qt '%u'
+protocol=Rhinohorn
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

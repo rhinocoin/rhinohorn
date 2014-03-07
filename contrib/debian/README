@@ -1,0 +1,20 @@
+This directory contains files used to package Rhinohornd/Rhinohorn-qt
+for Debian-based Linux systems.
+
+If you compile Rhinohornd/Rhinohorn-qt yourself, there are some
+useful files here:
+
+Rhinohorn: URI support
+--------------------
+
+Rhinohorn-qt.desktop  (Gnome / Open Desktop)
+To install:
+  sudo desktop-file-install Rhinohorn-qt.desktop
+  sudo update-desktop-database
+
+If you build yourself, you will either need to modify the paths in
+the .desktop file or copy or symlink your Rhinohorn-qt binary to /usr/bin
+and the ../../share/pixmaps/Rhinohorn128.png to /usr/share/pixmaps
+
+Rhinohorn-qt.protocol (KDE)
+
