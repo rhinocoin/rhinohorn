@@ -1,7 +1,7 @@
 Rhinohorn integration/staging tree
 ================================
 
-http://www.Rhinohorn.org
+
 
 Copyright (c) 2009-2013 Bitcoin Developers
 Copyright (c) 2011-2013 Litecoin Developers
@@ -18,8 +18,7 @@ Rhinohorn is a lite version of Bitcoin using scrypt-adaptive-N as a proof-of-wor
  - Every block to retarget difficulty with Kimotos Gravity Well algorithm
 
 For more information, as well as an immediately useable, binary version of
-the Rhinohorn client sofware, see http://www.Rhinohorn.org.
-
+the Rhinohorn client sofware.
 License
 -------
 
